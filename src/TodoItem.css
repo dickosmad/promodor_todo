@@ -1,0 +1,47 @@
+.todo {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.todo {
+  background: rgba(5, 105, 136, 0.733);
+  padding: 14px;
+  margin: 15px;
+  border-radius: 5px;
+}
+.edit__button,
+.cancel__button {
+  padding: 2px;
+}
+
+.todo__input input {
+  background-color: rgb(27, 112, 137);
+  border: 0;
+  width: 400px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: black;
+}
+
+.todo__input input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.todo__input input:focus {
+  outline: none;
+}
+.todo__input button {
+  height: 50px;
+  width: 80px;
+  margin: 4px;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.edit_and_clock {
+  display: flex;
+  align-items: center;
+}

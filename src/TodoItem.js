@@ -7,7 +7,7 @@ import ParentTimer from "./ParentTimer";
 
 const TodoItem = ({ item, edit, updateTodo, cancelTodo }) => {
   const [value, setValue] = useState(item.text);
-  const [timer, setTimer] = React.useState(0);
+  const [timer, setTimer] = React.useState(item.timer);
 
   const TimerValue = (t) => {
     setTimer(t);
@@ -44,7 +44,7 @@ const TodoItem = ({ item, edit, updateTodo, cancelTodo }) => {
                 <button className="edit__button" onClick={() => edit(item.key)}>
                   <FaRegEdit />
                 </button>
-                <ParentTimer TimerValue={TimerValue} />
+                <ParentTimer TimerValue={TimerValue} item={item} />
               </div>
             </div>
           )}

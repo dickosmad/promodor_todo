@@ -3,7 +3,8 @@ import Timer from "./Timer";
 import { AiOutlinePlayCircle, AiOutlinePauseCircle } from "react-icons/ai";
 import "./Timer.css";
 
-const ParentTimer = ({ TimerValue }) => {
+const ParentTimer = ({ TimerValue, item }) => {
+  console.log("timer in parentTimer line 7", item.timer);
   const [state, setState] = React.useState({
     timer1: false,
     timer2: false,

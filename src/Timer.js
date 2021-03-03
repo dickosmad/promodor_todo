@@ -4,14 +4,14 @@ import { AiOutlineClockCircle } from "react-icons/ai";
 const Timer = ({ setTimerState }) => {
   const [timer, setTimer] = React.useState(false);
 
-  const handleClcik = React.useCallback(() => {
+  const handleClcik = () => {
     setTimer(!timer);
     if (!timer) {
       setTimerState(!timer, 5);
     } else {
       setTimerState(!timer, -5);
     }
-  }, [timer]);
+  };
 
   return (
     <div>
